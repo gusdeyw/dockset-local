@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+# But do not ignore docker-compose files
+!docker-compose.yml
+# Do not ignore nginx.conf
+!nginx.conf
+# Do not ignore www folder and its .gitignore and index.html
+!www/
+!www/.gitignore
+!www/index.html
