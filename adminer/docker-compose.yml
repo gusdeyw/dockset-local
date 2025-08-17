@@ -1,0 +1,7 @@
+services:
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: no
+    ports:
+      - "8081:8080"
