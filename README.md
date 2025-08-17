@@ -5,8 +5,10 @@ This repository contains ready-to-use Docker Compose setups for common developme
 ## Available Stacks
 
 - **MySQL**: `mysql/docker-compose.yml`
+- **MariaDB**: `mariadb/docker-compose.yml`
 - **PostgreSQL**: `postgres/docker-compose.yml`
 - **Redis**: `redis/docker-compose.yml`
+- **Nginx (Web Server)**: `nginx/docker-compose.yml`
 
 ## Usage
 
@@ -23,8 +25,10 @@ This repository contains ready-to-use Docker Compose setups for common developme
    docker compose down
    ```
 
+
 ## Customization
 - Edit the `docker-compose.yml` files to change ports, credentials, or volumes as needed.
+- The `version` field in `docker-compose.yml` is optional and can be omitted for most setups.
 - Add more services or stacks as your needs grow.
 
 ---
