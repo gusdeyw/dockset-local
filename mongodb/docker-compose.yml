@@ -1,0 +1,15 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: mongodb
+    restart: no
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: exampledb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+volumes:
+  mongodb_data:
