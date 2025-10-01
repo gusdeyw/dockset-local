@@ -1,0 +1,6 @@
+# MinIO data and system files
+data/
+.minio.sys/
+
+# Environment files
+.env

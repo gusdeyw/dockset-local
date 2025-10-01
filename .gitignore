@@ -1,0 +1,64 @@
+# Docker volumes and data directories
+*/data/
+*/logs/
+*/config/
+*/.env
+
+# MinIO specific
+minio/data/
+minio/.minio.sys/
+
+# Database data directories
+mysql/data/
+mariadb/data/
+postgres/data/
+mongodb/data/
+redis/data/
+
+# Nginx logs
+nginx/logs/
+
+# WordPress uploads and cache
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.production
+.env.development
+
+# Docker specific
+.dockerignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders
+tmp/
+temp/
