@@ -20,9 +20,9 @@ budgetactual/actual-data/
 # Nginx logs
 nginx/logs/
 
-# WordPress uploads and cache
-wordpress/wp-content/uploads/
-wordpress/wp-content/cache/
+# Frappe data directories
+frappe/*/sites/
+frappe/*/logs/
 
 # Environment files with sensitive data
 .env

@@ -14,6 +14,7 @@ This repository contains ready-to-use Docker Compose setups for common developme
 ### Web Servers & Applications
 - **Nginx**: `nginx/docker-compose.yml` - High-performance web server
 - **WordPress**: `wordpress/docker-compose.yml` - WordPress with MariaDB backend
+- **Frappe HRMS**: `frappe/hrms/docker-compose.yml` - Complete HR management system
 
 ### Storage & File Management
 - **MinIO**: `minio/docker-compose.yml` - S3-compatible object storage server
@@ -53,6 +54,7 @@ This repository contains ready-to-use Docker Compose setups for common developme
 ### Web Services
 - **Nginx**: http://localhost:8080
 - **WordPress**: http://localhost:8090 (with MariaDB backend)
+- **Frappe HRMS**: http://localhost:8000 (user: `Administrator`, password: `admin`)
 - **MinIO Console**: http://localhost:9051 (user: `minioadmin`, password: `minioadmin123`)
 - **MinIO API**: http://localhost:9050
 

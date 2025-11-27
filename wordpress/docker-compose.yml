@@ -1,0 +1,30 @@
+services:
+  wordpress:
+    image: wordpress:latest
+    restart: no
+    depends_on:
+      - wpdb
+    ports:
+      - "8090:80"
+    environment:
+      WORDPRESS_DB_HOST: wpdb
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wordpress_data:/var/www/html
+
+  wpdb:
+    image: mariadb:latest
+    restart: no
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: wordpress
+      MARIADB_ROOT_PASSWORD: example_root_password
+    volumes:
+      - wp_db_data:/var/lib/mysql
+
+volumes:
+  wordpress_data:
+  wp_db_data:
